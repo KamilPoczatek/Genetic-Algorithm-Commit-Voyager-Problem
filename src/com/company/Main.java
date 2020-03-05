@@ -17,11 +17,11 @@ public class Main {
         settings.Pm = 0.05;  //prawdopodobieństwo mutacji
         settings.Tour = 2;  //ilosc osobników w turnieju
 
-        //String source = "C:\\Users\\Kamil\\Desktop\\Sztuczna Inteligencja i Inżynieria Wiedzy\\Cw1\\student\\test.TTP";
-        String source = "C:\\Users\\Kamil\\Desktop\\Sztuczna Inteligencja i Inżynieria Wiedzy\\Cw1\\student\\trivial_0.TTP";
-        //String source = "C:\\Users\\Kamil\\Desktop\\Sztuczna Inteligencja i Inżynieria Wiedzy\\Cw1\\student\\easy_0.TTP";
-        //String source = "C:\\Users\\Kamil\\Desktop\\Sztuczna Inteligencja i Inżynieria Wiedzy\\Cw1\\student\\medium_0.TTP";
-        //String source = "C:\\Users\\Kamil\\Desktop\\Sztuczna Inteligencja i Inżynieria Wiedzy\\Cw1\\student\\hard_0.TTP";
+        //String source = System.getProperty("user.dir") +"/testdata/" + "test.TTP";
+        String source =  System.getProperty("user.dir") +"/testdata/" + "trivial_0.TTP";
+        //String source = System.getProperty("user.dir") +"/testdata/" + "easy_0.TTP";
+        //String source = System.getProperty("user.dir") +"/testdata/" + "medium_0.TTP";
+        //String source = System.getProperty("user.dir") +"/testdata/" + "hard_0.TTP";
 
         MyLoader.load (source, settings, nodeCoords);
 
